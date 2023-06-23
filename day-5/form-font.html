@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Regestration Form</title>
+    <style>
+        .er{
+            text-align: center;
+            background-color: rgb(196, 193, 190);
+            color: black;
+            font-style: italic;
+            width: 50%;
+            margin-left: 25%;
+            border-radius: 10px;
+        }
+        .er:hover{
+            color: rgb(234, 233, 238);
+            background-color: #3d0af3;
+        }
+        #fname:hover{
+            color: red;
+            cursor: pointer;
+        }
+        #name{
+            border-radius: 7px ;
+        }
+    </style>
+</head>
+<body>
+    <form class="er" action="student.html" target="_blank">
+        <div style="text-align: center;">
+            <h1>Student Regestration Form</h1>
+
+        </div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+          </svg>
+        <lable id="fname"  for="fname">Enter Your Name</lable><br>
+        <input type="text" name="fname" id="name" required><br><br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+          </svg>
+          <lable for="fname">select your gender</lable><br>  
+        <label for="gen">male</label>
+        <input type="radio" name="gen" id="gen">
+        <label for="gen">Female</label>
+        <input type="radio" name="gen" id="gen"><br><br>
+
+        <label for="birth">Enter Birthday</label>
+        <input type="date" name="gen" id="gen"><br><br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+          </svg>
+        <lable for="cname">Enter Your Contact Number</lable><br>
+        <input type="text" name="contact" id="cname"><br><br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg>
+        <lable for="mail">Enter Your E mail</lable><br>
+        <input type="text" name="mail" id="cname"><br><br>
+
+        <lable for="add">Enter the Address</lable><br>
+        <textarea id="add" row="5" cols="20"></textarea><br><br>
+
+        <lable for="sub">Submit it Buddy</lable><br>
+        <input type="submit" name="sub" id="cname"><br><br>
+    </form>
+    
+</body>
+</html>
