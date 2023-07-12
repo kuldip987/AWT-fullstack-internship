@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback form</title>
+    <style>
+        .container{
+            width: 30%;
+            border: 2px solid black;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 12% 33%;
+        }
+body {
+     background: #f1f1f1;
+}
+ body h1 {
+   font-family: 'Roboto Slab', serif;
+     margin: 50px 20px 40px;
+     font-size: 50px;
+     letter-spacing: 0.5px;
+     color: #999;
+     text-align: center;
+}
+ .rating {
+     width: 208px;
+     height: 43px;
+     margin: 0 auto;
+     /* padding: 40px 50px; */
+     /* border: 1px solid #ccc; */
+     background: #f9f9f9;
+}
+ .rating label {
+     float: right;
+     position: relative;
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+}
+ .rating label:not(:first-of-type) {
+     padding-right: 2px;
+}
+ .rating label:before {
+     content: "\2605";
+     font-size: 42px;
+     color: #ccc;
+     line-height: 1;
+}
+ .rating input {
+     display: none;
+}
+ .rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
+     color: #f9df4a;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="kuldip.php"></form>
+    <h2>FEEDBACK FORM</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+      </svg>
+      <input type="text" name="name" id="" placeholder="Enter your name "><br><br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+      </svg>
+    <input type="email" name="name" id="" placeholder="Enter your email-id "><br><br>
+    <div>Male : <input type="radio" name="mygender"> Female : <input type="radio" name="mygender"></div><br>
+   
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+    </div>    <br>
+    <div> Message : <br> <textarea name="my text" cols="20" rows="5"></textarea></div><br>
+    <div id="km"> <input type="submit" value="submit now "></div>
+</body>
+</div>
+</html>
